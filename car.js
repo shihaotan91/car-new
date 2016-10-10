@@ -8,4 +8,8 @@ Car.prototype.acc = function(num) {
   this.speed += num
 }
 
+Car.prototype.setColor = function(color) {
+  this.color = color
+}
+
 module.exports = Car
