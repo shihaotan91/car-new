@@ -1,5 +1,7 @@
-var Car = function (colors, convertible){
-  this.colors = colors
+
+var Car = function(color, convertible, brand){
+  this.color = color
+  this.brand = brand
   this.speed = 0
   this.convertible = convertible
 }
@@ -17,6 +19,10 @@ Car.prototype.acc = function (num) {
 
 Car.prototype.setColor = function(color) {
   this.colors = color
+}
+
+Car.prototype.setBrand = function(brand) {
+  this.brand = brand
 }
 
 module.exports = Car
