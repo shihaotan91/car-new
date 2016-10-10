@@ -4,5 +4,8 @@ var Car = function(color, convertible){
   this.convertible = convertible
 }
 
+Car.prototype.acc = function(num) {
+  this.speed += num
+}
+
 module.exports = Car
- //test test
